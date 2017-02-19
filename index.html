@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+                font: 130% / 1.4 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+            }
+            ul {
+                margin: 0;
+            }
+            p {
+                margin-top: 0;
+            }
+
+            header {
+                text-align: center;
+                padding: 20px 0;
+                border-bottom: 1px solid #aaa;
+            }
+
+            main {
+                max-width: 980px;
+                margin: 0 auto;
+                padding: 15px 0;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: flex-start;
+            }
+            article {
+                flex: 1;
+            }
+            aside {
+                /* Used by sticky script */
+                position: relative;
+
+                flex: 0 0 250px;
+                padding: 20px;
+                margin: 0 0 0 20px;
+                box-sizing: border-box;
+
+                border-left: 2px solid #f1f1f1;
+                background: #f8f8f8;
+
+                overflow: auto;
+            }
+            aside::-webkit-scrollbar {
+                width: 4px;
+                height: 4px;
+            }
+            aside::-webkit-scrollbar-thumb {
+                background-color: rgba(0, 0, 0, .2);
+            }
+
+            footer {
+                text-align: center;
+                padding: 20px 0 300px;
+                border-top: 1px solid #aaa;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            Header
+        </header>
+
+        <main>
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor nisl sit amet ante gravida, a lacinia mi vulputate. Phasellus at magna a tortor blandit laoreet consequat ac neque. Sed eu lobortis nunc, a fermentum arcu. Nunc bibendum purus eros, eu consequat tellus viverra sed. Sed blandit fringilla lacus, sed lacinia arcu. Sed sed massa consequat, aliquet ipsum eget, porta odio. Sed fringilla interdum lorem, sit amet vulputate est aliquam vitae. Maecenas vitae posuere eros, vel fringilla purus. Vivamus accumsan ultrices tellus, id fringilla lorem ultrices ut. Praesent non tincidunt mi. Aliquam suscipit, metus eu scelerisque efficitur, lorem dolor pharetra orci, et ullamcorper sapien lectus vel lorem. Phasellus dictum augue nec eros fermentum consequat. Praesent posuere purus id orci vulputate, non facilisis nisi maximus.</p>
+
+                <p>Etiam elementum lorem justo. Sed nec elementum nisl, eget tristique odio. Mauris mattis leo at fringilla scelerisque. Nullam at placerat nulla. Etiam vehicula pulvinar augue sed hendrerit. Duis justo neque, convallis a molestie quis, luctus eget leo. Sed auctor dui nec diam pharetra, eu malesuada nisl pretium. Etiam pretium cursus est ultrices rhoncus.</p>
+
+                <p>Nullam tempus ante erat, at facilisis risus vestibulum vitae. Vivamus interdum quam non felis mollis, eu elementum ex sodales. Nunc vulputate est felis, sit amet cursus odio pharetra ac. Morbi volutpat hendrerit vestibulum. Nulla vitae malesuada nisl. Donec venenatis nisi sed dictum volutpat. Ut dui lorem, cursus pharetra interdum at, lobortis at eros. Proin efficitur ullamcorper lacus vel dignissim. Pellentesque auctor a sapien eu interdum.</p>
+
+                <p>Donec varius placerat nulla sed aliquet. Etiam at volutpat turpis, at rhoncus massa. Mauris cursus augue vel dolor vehicula tincidunt. Integer at augue risus. Nam rutrum lobortis malesuada. Pellentesque interdum, nisi id posuere mattis, sapien risus pharetra eros, ac placerat justo metus eu dui. Fusce porta bibendum sem. Duis tempus dolor ut massa gravida malesuada. Fusce porta est vestibulum ipsum consectetur efficitur. Sed feugiat ligula sit amet leo efficitur, eget ultricies arcu gravida. Duis cursus urna vitae elit sollicitudin, sed egestas orci consectetur. Phasellus scelerisque tellus non ex convallis, vel euismod enim viverra.</p>
+
+                <p>Nullam a accumsan orci, et ullamcorper odio. Vestibulum consequat ligula arcu, non venenatis ante dapibus vitae. Aliquam a rutrum erat. Pellentesque venenatis laoreet efficitur. Praesent maximus molestie purus vitae lacinia. Aliquam metus augue, laoreet vitae odio in, bibendum consectetur elit. Cras tortor nulla, congue ut dui sit amet, iaculis lacinia ex. Suspendisse imperdiet, arcu nec scelerisque lobortis, elit elit aliquam dolor, et consequat lectus turpis sit amet lorem. Integer vel interdum orci, id imperdiet nulla. Suspendisse convallis odio mattis purus dignissim, vel vestibulum nisi iaculis. Sed rhoncus magna vitae tincidunt tristique. Nam sollicitudin lacus mattis risus auctor imperdiet. Ut nisi diam, mollis vel mattis quis, tristique eget turpis.</p>
+            </article>
+            <aside id="aside">
+                <ul>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                </ul>
+            </aside>
+        </main>
+
+        <footer>
+            <p>Footer</p>
+        </footer>
+
+        <script src="sticky.js"></script>
+        <script src="shrink-to-viewport.js"></script>
+        <script>
+            new ShrinkToViewport(document.getElementById('aside'), {
+                offset: 20
+            });
+        </script>
+    </body>
+</html>

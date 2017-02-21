@@ -1,63 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <style>
-            body {
-                margin: 0;
-                font: 130% / 1.4 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-            }
-            ul {
-                margin: 0;
-            }
-            p {
-                margin-top: 0;
-            }
-
-            header {
-                text-align: center;
-                padding: 20px 0;
-                border-bottom: 1px solid #aaa;
-            }
-
-            main {
-                max-width: 980px;
-                margin: 0 auto;
-                padding: 15px 0;
-                display: flex;
-                flex-flow: row wrap;
-                align-items: flex-start;
-            }
-            article {
-                flex: 1;
-            }
-            aside {
-                /* Used by sticky script */
-                position: relative;
-
-                flex: 0 0 250px;
-                padding: 20px;
-                margin: 0 0 0 20px;
-                box-sizing: border-box;
-
-                border-left: 2px solid #f1f1f1;
-                background: #f8f8f8;
-
-                overflow: auto;
-            }
-            aside::-webkit-scrollbar {
-                width: 4px;
-                height: 4px;
-            }
-            aside::-webkit-scrollbar-thumb {
-                background-color: rgba(0, 0, 0, .2);
-            }
-
-            footer {
-                text-align: center;
-                padding: 20px 0 300px;
-                border-top: 1px solid #aaa;
-            }
-        </style>
+        <link rel="stylesheet" href="demo/styles.css"/>
     </head>
     <body>
         <header>
@@ -77,6 +21,7 @@
                 <p>Nullam a accumsan orci, et ullamcorper odio. Vestibulum consequat ligula arcu, non venenatis ante dapibus vitae. Aliquam a rutrum erat. Pellentesque venenatis laoreet efficitur. Praesent maximus molestie purus vitae lacinia. Aliquam metus augue, laoreet vitae odio in, bibendum consectetur elit. Cras tortor nulla, congue ut dui sit amet, iaculis lacinia ex. Suspendisse imperdiet, arcu nec scelerisque lobortis, elit elit aliquam dolor, et consequat lectus turpis sit amet lorem. Integer vel interdum orci, id imperdiet nulla. Suspendisse convallis odio mattis purus dignissim, vel vestibulum nisi iaculis. Sed rhoncus magna vitae tincidunt tristique. Nam sollicitudin lacus mattis risus auctor imperdiet. Ut nisi diam, mollis vel mattis quis, tristique eget turpis.</p>
             </article>
             <aside id="aside">
+                <h3>Demo Sidebar</h3>
                 <ul>
                     <li>Item</li>
                     <li>Item</li>
@@ -116,7 +61,7 @@
             <p>Footer</p>
         </footer>
 
-        <script src="sticky.js"></script>
+        <script src="demo/sticky.js"></script>
         <script src="shrink-to-viewport.js"></script>
         <script>
             new ShrinkToViewport(document.getElementById('aside'), {
